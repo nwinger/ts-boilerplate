@@ -1,3 +1,8 @@
 import * as React from 'react';
+import * as ReactDOM from 'react-dom';
 
-export default () => <div>Hello World</div>;
+import App from './components/App';
+
+const appRoot = document.getElementById('app');
+
+ReactDOM.render(<App message={'TS-Boilerplate'} />, appRoot);
